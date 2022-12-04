@@ -10,6 +10,14 @@
 2. If 'npm not found' for prompt --> **sudo apt-get install npm**
 3. then : **const prompt = require('prompt-sync')();**
 
+#### CREER UN FICHIER GITIGNORE
+Ala racine du projet 
+- creer un fichier **.gitignore**
+- mettre les chemins des fichiers a ignorer :
+/2-node/2-Our-First-App/node_modules
+ou les types de fichiers : ( * = tout les...)
+*.mov
+
 
 ## INITIALISER ET PUSHER GIT GITHUB  
 1. créer le repertoire sur github ou on veut pusher le dossier  
