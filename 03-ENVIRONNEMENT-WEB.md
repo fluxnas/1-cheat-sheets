@@ -157,3 +157,11 @@ RESUME pour construire la page :
 
 
 tuto : https://www.youtube.com/watch?v=tpLAcLFn9-U
+
+
+
+## TIPS
+
+serveur : localhost
+sgbd : postgresql
+ecrire le script : node.js / express
