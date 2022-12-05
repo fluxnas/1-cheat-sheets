@@ -2,5 +2,13 @@
 Se souvenir des manip et des fichiers installer sur mac
 
 ## brew
-- brew install postgresql
+
+- brew install sqlite 
+
+- node : brew install node
+entrer dans node terminal : node
+
+
+- postgresql : brew install postgresql
 https://wiki.postgresql.org/wiki/Homebrew
+sortir de postgres : \q
