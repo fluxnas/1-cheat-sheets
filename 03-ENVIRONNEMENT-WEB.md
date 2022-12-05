@@ -149,14 +149,17 @@ RESUME pour construire la page :
      --> et le navigateur va afficher la page web   
 
 
-
-
-
+exemple de langage / server / bd :
 ![Capture d’écran 2022-12-05 à 13 11 42](https://user-images.githubusercontent.com/104756701/205634301-b819204d-e46b-4a1e-9c5b-e656a92e54d5.png)
 
+tuto from : https://www.youtube.com/watch?v=tpLAcLFn9-U
 
 
-tuto : https://www.youtube.com/watch?v=tpLAcLFn9-U
+
+
+## RESUME : 
+![317333464_1534943820264213_6471252226176950663_n](https://user-images.githubusercontent.com/104756701/205656014-d6b3b280-3372-4980-80a0-95cba1e7f369.png)
+
 
 
 
@@ -165,3 +168,4 @@ tuto : https://www.youtube.com/watch?v=tpLAcLFn9-U
 serveur : localhost
 sgbd : postgresql
 ecrire le script : node.js / express
+
