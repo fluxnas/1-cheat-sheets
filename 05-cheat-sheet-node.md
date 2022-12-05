@@ -1,7 +1,8 @@
 # node
 
-node > framework 
+node > framework   
 npm > librairie en lien avec node qui facilite la creation de projet node
+quitter node > deux fois : ctrl + c 
 
 ## MISE EN PLACE
 
