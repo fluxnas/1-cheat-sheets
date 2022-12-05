@@ -38,24 +38,24 @@ exemple :
 - app.get('/pokemons/1, (req, res) => res.sen('les infos du pok 1'))
 - app.post('/pokemons', (req, res) => res.send('vous ajouter un pok au pokedex'))
 - app.put('/pokemons/1', (req, res) => res.send('vous modifier le pok 1'))
-- app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))
-- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')
+- app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))  
+- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')  
 
 ### Les middlewares 
 permettent d'effectuer un traitement avant celui défini par les routes. On trouvera de nombreux middleware disponible sur NPM comme par exemple body-parser permettant de gérer les données postées par un formulaire par exemple.
 
 ### GET : 
-recuperer toutes les infos des users :
-    res.status() > defini un status pour la response
-    res.json() > renvoie une promesse JSON : JSON en entrée et analyse pour produire un objet JavaScript. 
-app.get('/users', (req, res) => {
-	res.status(202).json(users)
-  })
+recuperer toutes les infos des users :   
+    res.status() > defini un status pour la response   
+    res.json() > renvoie une promesse JSON : JSON en entrée et analyse pour produire un objet JavaScript.   
+app.get('/users', (req, res) => {   
+	res.status(202).json(users)   
+  })  
   
 ### POST : 
-Besoin d'un autre middleware module pour POST 
-terminal : npm install --save body-parser
-relancer le serveur : npm run dev
+Besoin d'un autre middleware module pour POST   
+terminal : npm install --save body-parser  
+relancer le serveur : npm run dev   
 
 
 
