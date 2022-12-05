@@ -5,10 +5,11 @@ Se souvenir des manip et des fichiers installer sur mac
 
 - brew install sqlite 
 
-- node : brew install node
+- node : brew install node 
 entrer dans node terminal : node
 
-
-- postgresql : brew install postgresql
+- postgresql : brew install postgresql : logiciel communique avec BD
 https://wiki.postgresql.org/wiki/Homebrew
 sortir de postgres : \q
+
+- postman pour chrome : tester API
