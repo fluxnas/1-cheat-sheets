@@ -12,4 +12,4 @@ entrer dans node terminal : node
 https://wiki.postgresql.org/wiki/Homebrew
 sortir de postgres : \q
 
-- postman pour chrome : tester API
+- insomnia : tester API
