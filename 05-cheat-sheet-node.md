@@ -64,9 +64,9 @@ exemple :
 recuperer toutes les infos des users :   
     res.status() > defini un status pour la response   
     res.json() > renvoie une promesse JSON : JSON en entrée et analyse pour produire un objet JavaScript.   
-app.get('/users', (req, res) => {   
-	res.status(202).json(users)   
-  })  
+**app.get('/users', (req, res) => {    
+	res.status(202).json(users)    
+  })**     
   
 **POST :** 
 Besoin d'un autre middleware module pour POST : **app.use(express.json())**   
