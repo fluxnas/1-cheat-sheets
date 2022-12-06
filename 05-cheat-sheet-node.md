@@ -39,6 +39,7 @@ app.listen(8080, () => { console.log("salut")})
 ### FICHIER DE REQUETE.rest : enregistrer la requete 
 
 - creer fichier a la racine du projet "notes_requests.rest" par exemple et lister les requetes séparer par **###**  
+
 **GET http://localhost:8080/api/users  
 ###  
 POST http://localhost:8080/api/users/ HTTP/1.1  
