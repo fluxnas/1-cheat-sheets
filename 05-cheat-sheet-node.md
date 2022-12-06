@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=5MQWjWl16bs
+
 # node
 
 node > framework   
@@ -30,13 +32,13 @@ const app = express()
 app.listen(8080, () => { console.log("salut")})  
 
 
-## REQUETES / ROUTES
+## REQUETES / ROUTES :
 
-### POSTMAN : tester la requete 
+### POSTMAN : tester la requete :
 ![Capture d’écran 2022-12-06 à 14 30 33](https://user-images.githubusercontent.com/104756701/205925473-0754d91c-49bc-47ab-8512-2ce8ee430e1d.png)
 
 
-### FICHIER DE REQUETE.rest : enregistrer la requete 
+### FICHIER DE REQUETE.rest : enregistrer la requete :
 
 - creer fichier a la racine du projet "notes_requests.rest" par exemple et lister les requetes séparer par **###**  
 
@@ -49,7 +51,7 @@ content-type: application/json
     "prenom" : "jf",  
 }**  
 
-### CREER UNE REQUETE 
+### TYPE DE REQUETE : 
 > **app.METHODE(CHEMIN, GESTIONNAIRE(req, res))**  
 > (METHODE = get, post, delete, ...)
 
@@ -58,7 +60,13 @@ exemple :
 - app.post('/pokemons', (req, res) => res.send('vous ajouter un pok au pokedex'))   
 - app.put('/pokemons/1', (req, res) => res.send('vous modifier le pok 1'))  
 - app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))   
-- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')  
+- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr') 
+ou: 
+- /books - GET - get the collection of books
+- /books - POST - insert into the collection
+- /book/:id - GET - get the book with :id
+- /book/:id - PUT - update the book with :id
+- /book/:id - DELETE - delete the book with :id
 
 **GET :** 
 recuperer toutes les infos des users :   
