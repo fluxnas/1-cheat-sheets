@@ -32,20 +32,35 @@ app.listen(8080, () => { console.log("salut")})
 
 ## REQUETES / ROUTES
 
+### POSTMAN : tester la requete 
+![Capture d’écran 2022-12-06 à 14 30 33](https://user-images.githubusercontent.com/104756701/205925473-0754d91c-49bc-47ab-8512-2ce8ee430e1d.png)
+
+
+### FICHIER DE REQUETE.rest : enregistrer la requete 
+
+- creer fichier a la racine du projet "notes_requests.rest" par exemple et lister les requetes séparer par **###**  
+**GET http://localhost:8080/api/users  
+###  
+POST http://localhost:8080/api/users/ HTTP/1.1  
+content-type: application/json  
+{  
+    "id" : 5,  
+    "nom" : "connier",  
+    "prenom" : "jf",  
+}**  
+
+### CREER UNE REQUETE 
 > **app.METHODE(CHEMIN, GESTIONNAIRE(req, res))**  
 > (METHODE = get, post, delete, ...)
 
 exemple :
-- app.get('/pokemons/1, (req, res) => res.sen('les infos du pok 1'))
-- app.post('/pokemons', (req, res) => res.send('vous ajouter un pok au pokedex'))
-- app.put('/pokemons/1', (req, res) => res.send('vous modifier le pok 1'))
-- app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))  
+- app.get('/pokemons/1, (req, res) => res.sen('les infos du pok 1'))   
+- app.post('/pokemons', (req, res) => res.send('vous ajouter un pok au pokedex'))   
+- app.put('/pokemons/1', (req, res) => res.send('vous modifier le pok 1'))  
+- app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))   
 - app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')  
 
-### Les middlewares 
-permettent d'effectuer un traitement avant celui défini par les routes. On trouvera de nombreux middleware disponible sur NPM comme par exemple body-parser permettant de gérer les données postées par un formulaire par exemple.
-
-### GET : 
+**GET :** 
 recuperer toutes les infos des users :   
     res.status() > defini un status pour la response   
     res.json() > renvoie une promesse JSON : JSON en entrée et analyse pour produire un objet JavaScript.   
@@ -53,10 +68,21 @@ app.get('/users', (req, res) => {
 	res.status(202).json(users)   
   })  
   
-### POST : 
-Besoin d'un autre middleware module pour POST   
-terminal : npm install --save body-parser  
-relancer le serveur : npm run dev   
+**POST :** 
+Besoin d'un autre middleware module pour POST : **app.use(express.json())**   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
