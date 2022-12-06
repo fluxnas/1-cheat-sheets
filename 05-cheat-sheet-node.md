@@ -40,12 +40,11 @@ app.listen(8080, () => { console.log("salut")})
 
 - creer fichier a la racine du projet "notes_requests.rest" par exemple et lister les requetes séparer par **###**  
 
-**GET http://localhost:8080/api/users  
-###  
-POST http://localhost:8080/api/users/ HTTP/1.1  
+**GET http://localhost:8080/api/users** 
+**###**  
+**POST http://localhost:8080/api/users/ HTTP/1.1  
 content-type: application/json  
-{  
-    "id" : 5,  
+{  "id" : 5,  
     "nom" : "connier",  
     "prenom" : "jf",  
 }**  
