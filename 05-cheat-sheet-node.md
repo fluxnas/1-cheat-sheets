@@ -91,7 +91,7 @@ pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia a
 			prenom  
 		})  
 		res.json(users)  
-	})  
+	})**  
 
 
 **DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE    
