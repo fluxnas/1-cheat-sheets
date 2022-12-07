@@ -83,15 +83,15 @@ pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia a
   
   
 **POST :** ajouter créer un user dynamique  --> tester dans insomnia avec POST   
-	**app.post('/api/users', (req, res) => {
-		const { id, nom, prenom } = req.body
-		users.push({
-			id,
-			nom,
-			prenom
-		})
-		res.json(users)
-	})
+	**app.post('/api/users', (req, res) => {  
+		const { id, nom, prenom } = req.body  
+		users.push({  
+			id,  
+			nom,  
+			prenom  
+		})  
+		res.json(users)  
+	})  
 
 
 **DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE    
