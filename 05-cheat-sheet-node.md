@@ -82,7 +82,7 @@ autre exemple :
 	})**  
   
   
-**POST :** ajouter créer un user dynamique  --> tester dans insomnia avec POST
+**POST :** ajouter créer un user dynamique  --> tester dans insomnia avec POST   
 	**app.post('/api/users', (req, res) => {
 		const { id, nom, prenom } = req.body
 		users.push({
@@ -94,14 +94,14 @@ autre exemple :
 	})
 
 
-**DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE   
+**DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE    
 	**app.delete('/api/users/:id', (req, res) => {   
   			const id = Number(req.params.id)   
   		users = users.filter(user => user.id !== id)   
   		res.status(204).end()   
 	})**  
 
-**PUT** Mise a jour "update" d'un user --> tester dans insomnia avec PUT   
+**PUT** Mise a jour "update" d'un user --> tester dans insomnia avec PUT    
 	**app.put('/api/users/:id', function(req, res) {
 		const Userid = Number(req.params.id)
 		const {id, nom, prenom} = req.body
