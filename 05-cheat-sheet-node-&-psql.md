@@ -121,6 +121,61 @@ pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia a
 		res.json(users)  
 	})**
 
+## CONNEXION DB : postgresql   
+ 
+### Mise en place : dans le terminal :   
+- lancer pg : **brew services start postgresql** --> stop : **brew services stop postgresql**   
+- connect to default psql : **psql postgres**  
+--> la ligne commence par : **postgres=#** : nous sommes connectés en tant que super-utilisateur ou root  
+- avoir les infos de connexion : **postgres=# \conninfo**
+
+> \q: Exit psql connection  
+> \c: Connect to a new database  
+> \dt: List all tables  
+> \du: List all roles  
+> \list: List databases  
+
+### Créer un nouveau user et nouvelle DB 
+Pour ne pas utiliser les comptes par défaut, qui ont des privilèges de superutilisateur.
+
+**CREER UN ROLE :**  
+- creer un role : **postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';**
+- donner le droit creer db au role : **postgres=# ALTER ROLE me CREATEDB;**
+- sortir de postgres : **postgres=# \q**
+- relier pg et me : **psql -d postgres -U me**
+--> **postgres=#** se transforme en **postgres=>** (on est plus connecté en superuser)  
+
+**CREER UNE DB :**  
+- creer db : **postgres=> CREATE DATABASE api;**
+- voir les db dispo : **\list**  
+- se connecter avec la nvlle api : me : **postgres=> \c api**
+
+**CREER UNE TABLE**  
+- creer une table users : 
+**api=>  
+CREATE TABLE users (  
+  ID SERIAL PRIMARY KEY,  
+  name VARCHAR(30),  
+  email VARCHAR(30)  
+);** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
