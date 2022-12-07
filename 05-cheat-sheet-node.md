@@ -60,8 +60,9 @@ exemple :
 - app.post('/pokemons', (req, res) => res.send('vous ajouter un pok au pokedex'))   
 - app.put('/pokemons/1', (req, res) => res.send('vous modifier le pok 1'))  
 - app.delete('/pokemons/1' (req, res) => res.send('le pok 1 est suppr'))   
-- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr') 
-ou: 
+- app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')   
+
+autre exemple : 
 - /books - GET - get the collection of books
 - /books - POST - insert into the collection
 - /book/:id - GET - get the book with :id
@@ -69,21 +70,53 @@ ou:
 - /book/:id - DELETE - delete the book with :id
 
 **GET :** 
-recuperer toutes les infos des users :   
-    res.status() > defini un status pour la response   
-    res.json() > renvoie une promesse JSON : JSON en entrée et analyse pour produire un objet JavaScript.   
-**app.get('/users', (req, res) => {    
-	res.status(202).json(users)    
-  })**     
+//pointers page /users renvoie touts les users --> tester dans insomnia avec verbe GET   
+	**app.get('/api/users', (req, res) => {  
+	res.json(users)  
+  	})**  
+// pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia avec verbe GET   
+	**app.get('/api/users/:id', (req, res) => {   
+  		const id = Number(req.params.id)   
+  		const user = users.find(user => user.id === id)   
+  		res.json(user)   
+	})**  
   
-**POST :** 
-Besoin d'un autre middleware module pour POST : **app.use(express.json())**   
+  
+**POST :** ajouter créer un user dynamique  --> tester dans insomnia avec POST
+	**app.post('/api/users', (req, res) => {
+		const { id, nom, prenom } = req.body
+		users.push({
+			id,
+			nom,
+			prenom
+		})
+		res.json(users)
+	})
 
 
+**DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE   
+	**app.delete('/api/users/:id', (req, res) => {   
+  			const id = Number(req.params.id)   
+  		users = users.filter(user => user.id !== id)   
+  		res.status(204).end()   
+	})**  
 
-
-
-
+**PUT** Mise a jour "update" d'un user --> tester dans insomnia avec PUT   
+	**app.put('/api/users/:id', function(req, res) {
+		const Userid = Number(req.params.id)
+		const {id, nom, prenom} = req.body
+		users = users.map(function(user) {
+			if(user.id === Userid) {
+				return {
+					id,
+					nom,
+					prenom
+				}
+			}
+			return user
+		}) 
+		res.json(users)
+	})**
 
 
 
