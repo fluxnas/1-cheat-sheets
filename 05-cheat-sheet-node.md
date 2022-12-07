@@ -63,11 +63,14 @@ exemple :
 - app.delete('/pokemons'), (req, res) => res.send('tous les pok suppr')   
 
 autre exemple : 
-- /books - GET - get the collection of books : **CREATE** : Utilisez la méthode HTTP POST pour créer une ressource dans un environnement REST.  
-- /book/:id - GET - get the book with :id
-- /books - POST - insert into the collection : **READ** : Utilisez la méthode GET pour lire une ressource et récupérer des données sans les modifier.   
-- /book/:id - PUT - update the book with :id : **UPDATE** : utiliser la méthode PUT pour mettre à jour une ressource.   
-- /book/:id - DELETE - delete the book with :id : **DELETE** : Utilisez la méthode DELETE pour supprimer une ressource du système.   
+- **CREATE** : Utilisez la méthode HTTP POST pour créer une ressource dans un environnement REST.    
+	/books - **GET** - get the collection of books   
+- **READ** : Utilisez la méthode GET pour lire une ressource et récupérer des données sans les modifier.   
+	/books - **POST** - insert into the collection   
+- **UPDATE** : utiliser la méthode PUT pour mettre à jour une ressource.     
+	/book/:id - **PUT** - update the book with :id   
+- **DELETE** : Utilisez la méthode DELETE pour supprimer une ressource du système.
+	/book/:id - **DELETE** - delete the book with :id     
 
 **GET :**    
 pointers page /users renvoie touts les users --> tester dans insomnia avec verbe GET    
