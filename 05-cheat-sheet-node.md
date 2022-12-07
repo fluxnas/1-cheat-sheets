@@ -69,17 +69,17 @@ autre exemple :
 - /book/:id - PUT - update the book with :id
 - /book/:id - DELETE - delete the book with :id
 
-**GET :** 
-//pointers page /users renvoie touts les users --> tester dans insomnia avec verbe GET   
+**GET :**    
+pointers page /users renvoie touts les users --> tester dans insomnia avec verbe GET    
 	**app.get('/api/users', (req, res) => {  
 	res.json(users)  
-  	})**  
-// pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia avec verbe GET   
+  	})**   
+pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia avec verbe GET    
 	**app.get('/api/users/:id', (req, res) => {   
   		const id = Number(req.params.id)   
   		const user = users.find(user => user.id === id)   
   		res.json(user)   
-	})**  
+	})**   
   
   
 **POST :** ajouter créer un user dynamique  --> tester dans insomnia avec POST   
@@ -96,26 +96,26 @@ autre exemple :
 
 **DELETE :**  pointer un id et supprimer sa ressource --> tester dans insomnia avec DELETE    
 	**app.delete('/api/users/:id', (req, res) => {   
-  			const id = Number(req.params.id)   
+  		const id = Number(req.params.id)   
   		users = users.filter(user => user.id !== id)   
   		res.status(204).end()   
 	})**  
 
 **PUT** Mise a jour "update" d'un user --> tester dans insomnia avec PUT    
-	**app.put('/api/users/:id', function(req, res) {
-		const Userid = Number(req.params.id)
-		const {id, nom, prenom} = req.body
-		users = users.map(function(user) {
-			if(user.id === Userid) {
-				return {
-					id,
-					nom,
-					prenom
-				}
-			}
-			return user
-		}) 
-		res.json(users)
+	**app.put('/api/users/:id', function(req, res) {  
+		const Userid = Number(req.params.id)  
+		const {id, nom, prenom} = req.body  
+		users = users.map(function(user) {  
+			if(user.id === Userid) {  
+				return {  
+					id,  
+					nom,  
+					prenom  
+				}  
+			}  
+			return user  
+		})   
+		res.json(users)  
 	})**
 
 
