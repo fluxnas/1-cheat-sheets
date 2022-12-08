@@ -5,6 +5,10 @@ ARCHITECTRURE 3 TIERS :
 - SERVEUR WEB
 - BD : source de données
 
+
+![environnement-web](https://user-images.githubusercontent.com/104756701/206423412-42e78c36-35fc-404f-b6e3-1d4f90b7ca92.jpg)
+
+
 ## TIERS 1 : CLIENT :
 
 ### **URL : https://site.com/a-propos : divisé en 3 parties :**    
