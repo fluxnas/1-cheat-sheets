@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=5MQWjWl16bs
+https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/
 
 # node
 
