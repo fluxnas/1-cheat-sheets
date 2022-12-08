@@ -124,6 +124,13 @@ pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia a
 
 ## CONNEXION DB : postgresql   
  
+ - connect to postgres : on est connecter en tant que superuser
+ - creer une db
+ - creer un autre user
+ - donner les permission au user
+ - switch connexion to user
+
+
 ### Mise en place : dans le terminal :   
 - lancer pg : **brew services start postgresql** --> stop : **brew services stop postgresql**   
 - connect to default psql : **psql postgres**  
