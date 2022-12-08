@@ -12,4 +12,6 @@ entrer dans node terminal : node
 https://wiki.postgresql.org/wiki/Homebrew
 sortir de postgres : \q
 
-- insomnia : tester API
+- insomnia : tester API   
+
+-pg : node-postgres : node-postgres is a collection of Node.js modules for interfacing with a PostgreSQL database.
