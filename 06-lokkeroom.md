@@ -152,6 +152,12 @@ server.listen(3000)
 
 
 
+## REMPLIR DB 
+https://drawsql.app/?via=juan-pablo
+- faire le schema 
+- exporter en .sql
+- se co a la db via le bon user
+- copier coller le contenu du fichier .sql
 
 
 
