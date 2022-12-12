@@ -23,7 +23,7 @@ SO we need first to create 3 things: ON A 3 ELEMENT QUI INTERARGISSENT ENSEMBLE
 - **CREATE USER *username* WITH ENCRYPTED PASSWORD 'password';**  
 - **GRANT ALL PRIVILEGES ON DATABASE *name of the db* TO *username*;  
 - donner l'accès a tout les schemas (créer utilisateur et créer le système : **GRANT ALL ON SCHEMA PUBLIC TO *username*;**  
-- se co a partir de l'utilisateur créer : **\c *database* *username**  
+- se co a partir de l'utilisateur créer : ***\c *database* *username**  
 
 - **CREATE TABLE *table name* (id serial PRIMARY KEY, content VARCHAR);**  
 
