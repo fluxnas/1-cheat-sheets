@@ -15,24 +15,22 @@ SO we need first to create 3 things: ON A 3 ELEMENT QUI INTERARGISSENT ENSEMBLE
 
 ## Let's start with a database :  
 
-- log in on postgress :   
-	- brew services start postgresql   
-	- psql postgres  
+- log in on postgress : dans le terminal :  
+	- **brew services start postgresql**   
+	- **psql postgres**  
 
-- CREATE DATABASE *name of the db*;  
-- CREATE USER *username* WITH ENCRYPTED PASSWORD 'password';  
-- GRANT ALL PRIVILEGES ON DATABASE *name of the db* TO *username*;  
-- donner l'accès a tout les schemas (créer utilisateur et créer le système : GRANT ALL ON SCHEMA PUBLIC TO *username*;  
+- **CREATE DATABASE *name of the db*;**  
+- **CREATE USER *username* WITH ENCRYPTED PASSWORD 'password';**  
+- **GRANT ALL PRIVILEGES ON DATABASE *name of the db* TO *username*;  
+- donner l'accès a tout les schemas (créer utilisateur et créer le système : **GRANT ALL ON SCHEMA PUBLIC TO *username*;**  
+- se co a partir de l'utilisateur créer : **\c *database* *username\***  
 
-- se co a partir de l'utilisateur créer : \c *database* *username*  
+- **CREATE TABLE *table name* (id serial PRIMARY KEY, content VARCHAR);**  
 
-- CREATE TABLE *table name* (id serial PRIMARY KEY, content VARCHAR);  
-
-- quitter : \q  
+- quitter : **\q**  
 
 ==> if you have an error like 'permission denied for schema public'  
 You need to use your superuser account to give the acces to the new user created earlier  
-
 \c *name of your new database* *postgres*  
 GRANT ALL ON SCHEMA public to *user name*;  
 
@@ -51,9 +49,9 @@ GRANT ALL ON SCHEMA public to *user name*;
 
 ## Let's continue with the SERVER SIDE on the terminal :  
 
-- touch index.mjs  
-- npm init (initialiser : accepter : touch entrée)  
-- npm install express --save  
+- **touch index.mjs**  
+- **npm init** (initialiser : accepter : touch entrée)  
+- **npm install express --save**  
 
 - ouvrir index.mjs : code index.mjs  
  
@@ -96,7 +94,7 @@ res.send('{"name":"pepito"}')
 })  
 
 But we have still to put some data in the DB :   
-- psql postgres : INSERT INTO test_table (content) VALUES('test content');    
+- **INSERT INTO test_table (content) VALUES('test content');**    
 
 ==> you can see the new content with the querry SELECT * FROM test_table;    
 
@@ -104,28 +102,26 @@ But we have still to put some data in the DB :
 ## LET's go back to the client side.  
 
 HOW TO CONNECT the node to postgress?  
-- Go to the terminal and add : npm install pg --save  
+- Go to the terminal and add : **npm install pg --save**  
+
 - Go back to VSC :  
-
-import express from 'express'  
+**import express from 'express'  
 const server = express()  
-
 import pkg from 'pg'  
 const {Client} = pkg  
-
 const client = new Client({  
     host: 'localhost',  
     port: 5432,   
     database: 'lokkeroom_db',  
     user: 'lokkeroom_user',  
     password: 'password',  
-})  
+})** 
 
 // user : lokkeroom_user  
 // db : lokkeroom_db  
 // table : lokkeroom_table  
 
-server.get('/lokkeroom_table', (req, response) =>  {  
+**server.get('/lokkeroom_table', (req, response) =>  {  
     // connecter a la database  
     client.connect((err) => {  
         if (err) {  
@@ -141,9 +137,8 @@ server.get('/lokkeroom_table', (req, response) =>  {
         response.send({connection: "successfull", connection_time: Date.now(), responde: res}) // renvoie les données à la personne qui a fait la requete original coté client:  
         client.end()  
     })  
-})  
-
-server.listen(3000)  
+}) 
+server.listen(3000)**  
 
 
 > DON T FORGET TO put node index.mjs in the terminal in order to launch the app & now you can test on POSTMAN and it should be ok  
