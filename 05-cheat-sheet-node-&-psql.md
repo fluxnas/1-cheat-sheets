@@ -142,6 +142,7 @@ pointers page users/id renvoie lusers defini par l'id --> tester dans insomnia a
 > \dt: List all tables  
 > \du: List all roles  
 > \list: List databases  
+> DROP DATABASE ma_db : supprime la database ma_db
 
 ### Créer un nouveau role :  
 Pour ne pas utiliser les comptes par défaut, qui ont des privilèges de superutilisateur.
