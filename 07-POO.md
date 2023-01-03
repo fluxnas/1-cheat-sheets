@@ -1,6 +1,4 @@
 **OBJET** ex : crayon
-| **OBJET** ex : crayon | 
-|-------------- | --------------|
 | PROPRIETES | METHODES | 
 |-------------- | --------------| 
 | ex : couleurs taille forme | ex : crayon sert a ecrire | 
