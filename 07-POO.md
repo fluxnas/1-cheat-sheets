@@ -1,5 +1,4 @@
-## OBJET
-ex : crayon
+**OBJET** ex : crayon
 
 | PROPRIETES | METHODES | 
 |-------------- | --------------| 
