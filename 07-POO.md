@@ -8,14 +8,14 @@
 
 ex :   
 var moi = {   
-  prenom : "hanna",                               --> propriété   
-  nom : "c.a.",                                   --> propriété   
-  age : 31                                        --> propriété   
+  prenom : "hanna",                               ***--> propriété***   
+  nom : "c.a.",                                   ***--> propriété***   
+  age : 31                                        ***--> propriété***   
   
-  id : function() {                               --> propriété qui stock une méthode dont le but est de retourner la valeur associé a la propriété prenom, nom et age   
+  id : function() {                               ***--> propriété qui stock une méthode dont le but est de retourner la valeur associé a la propriété prenom, nom et age***   
     return this.prenom + this.nom + this.age   
   }   
 }   
 alert(moi.id())   
    
---> hannac.a.31    
+***--> return : hannac.a.31***    
