@@ -7,6 +7,17 @@ node > framework
 npm > librairie en lien avec node qui facilite la creation de projet node
 quitter node > deux fois : ctrl + c 
 
+## ARBORESCENCE DOSSIER
+index.mjs
+package.json
+	>node modules
+	>routes
+		users.mjs (les routes) : router.get('/users', getUsers) ...
+	>controllers
+		user.mjs (les functions, la logique) : export const getUsers = function(req,res) {res.json(users)}
+		
+	
+
 ## MISE EN PLACE
 
 1. terminal : npm init  : initialiser projet node
