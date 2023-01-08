@@ -282,7 +282,7 @@ module.exports = {
 - ou si on export :  **export const createUser = (request, response)** pour chaque const   
 alors on import comme ca : **import { allUsers, createUser } from './routes.mjs'**   
 - ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
-- alors on import comme ca : **import client from './routes.mjs'**   
+alors on import comme ca : **import client from './routes.mjs'**   
 
 
 
