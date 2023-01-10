@@ -27,6 +27,14 @@ alert(moi.id())
 
 ![whatis-object_oriented_programming](https://user-images.githubusercontent.com/104756701/211527008-7bffe30c-a826-4065-ba6f-9ba733f5b448.png)
 
+**La structure, ou les blocs de construction, de la programmation orientée objet comprennent les éléments suivants :**
+- **Les classes** sont des types de données définis par l'utilisateur qui servent de modèle aux objets, attributs et méthodes individuels.
+- **Les objets** sont des instances d'une classe créées avec des données spécifiquement définies. Les objets peuvent correspondre à des objets du monde réel ou à une entité abstraite. Lorsque la classe est définie initialement, la description est le seul objet défini.
+- **Les méthodes** sont des fonctions définies à l'intérieur d'une classe qui décrivent les comportements d'un objet. Chaque méthode contenue dans les définitions de classe commence par une référence à un objet d'instance. De plus, les sous-routines contenues dans un objet sont appelées méthodes d'instance. Les programmeurs utilisent les méthodes à des fins de réutilisation ou pour garder la fonctionnalité encapsulée dans un seul objet à la fois.
+- **Les attributs/ propriétés** sont définis dans le modèle de classe et représentent l'état d'un objet. Les objets auront des données stockées dans le champ des attributs. Les attributs de classe appartiennent à la classe elle-même.
+
+
+Traduit avec www.DeepL.com/Translator (version gratuite)
 
 ## Creer des objets a partir du constructeur (qui est une fonction)
 avec des methodes et des propriétés dont les objets créer a partir de celui ci heriterons de ces methodes et de ces propriétés   
