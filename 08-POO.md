@@ -25,6 +25,8 @@ alert(moi.id())
    
 ***--> return : hannac.a.31***    
 
+![whatis-object_oriented_programming](https://user-images.githubusercontent.com/104756701/211527008-7bffe30c-a826-4065-ba6f-9ba733f5b448.png)
+
 
 ## Creer des objets a partir du constructeur (qui est une fonction)
 avec des methodes et des propriétés dont les objets créer a partir de celui ci heriterons de ces methodes et de ces propriétés   
