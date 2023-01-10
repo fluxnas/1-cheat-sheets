@@ -34,8 +34,6 @@ alert(moi.id())
 - **Les attributs/ propriétés** sont définis dans le modèle de classe et représentent l'état d'un objet. Les objets auront des données stockées dans le champ des attributs. Les attributs de classe appartiennent à la classe elle-même.
 
 
-Traduit avec www.DeepL.com/Translator (version gratuite)
-
 ## Creer des objets a partir du constructeur (qui est une fonction)
 avec des methodes et des propriétés dont les objets créer a partir de celui ci heriterons de ces methodes et de ces propriétés   
 
