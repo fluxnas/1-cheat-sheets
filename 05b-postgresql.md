@@ -2,12 +2,12 @@ https://www.kindsonthegenius.com/build-a-rest-api-with-node-js-and-postgresql-ge
 
 une fois le server créé, mise en place node, index.mjs, package.json ....   
 
-> \q: Exit psql connection
-> \c: Connect to a new database
-> \dt: List all tables
-> \du: List all roles
-> \list: List databases
-> DROP DATABASE ma_db : supprime la database ma_db
+> \q: Exit psql connection  
+> \c: Connect to a new database   
+> \dt: List all tables   
+> \du: List all roles   
+> \list: List databases   
+> DROP DATABASE ma_db : supprime la database ma_db   
 
 
 - terminal : demarrer postgres : brew services restart postgresql   
