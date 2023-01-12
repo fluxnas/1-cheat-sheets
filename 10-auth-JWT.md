@@ -11,7 +11,8 @@ le back va recevoir --> décrypter la signature --> refaire le calcul  (header +
 ![325013279_680360187156740_7452717049033101924_n](https://user-images.githubusercontent.com/104756701/212021254-1c5591bd-d012-4d23-9381-c1f157093bc5.jpg)
 
 
-creeer le tokens, besoins 3 choses :
+##creeer le tokens, besoins 3 choses :
+
 -  **clef secrète** pour securise le jwt :  
 dotenv : **npm install dotenv** + creer un fichier d'environnement : **.env** :
 **ACCESS_TOKEN_SECRET = huigm
@@ -25,3 +26,30 @@ REFRESH_TOKEN_SECRET = jhgjhl**
 -  **données a stocker** : 
 -  date dexpiration du token : 
 
+
+## trier ses fichiers / dossiers : 
+
+- config : 
+    - configurer la base de données PostgreSQL et Sequelize
+    - configurer la clé d'authentification
+
+- routes
+    - auth.routes.js : POST signup & signin
+    - user.routes.js : GET ressources publiques et protégées
+
+- middlewares
+    - verifySignUp.js : vérifie les doublons de nom d'utilisateur ou d'e-mail
+    - authJwt.js : vérifie le Token, vérifie les rôles des utilisateurs dans la base de données
+
+- controllers
+    - auth.controller.js : gère les actions d'inscription et de signature
+    - user.controller.js : retourne les contenus publics et protégés
+
+- models pour les modèles Sequelize
+    - user.model.js
+    - role.model.js
+
+- server.js : importe et initialise les modules et routes nécessaires, écoute les connexions.
+
+
+v
