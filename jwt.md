@@ -1,10 +1,20 @@
+WT composé de trois parties :
+
+    un header : info du token : comment il est construit (algo, type, date expiration...)
+    un payload (les “claims”) : données a crypter
+    la signature : vérifier et conserver l'intégrité des données : elle reprends les 2 premières parties, les concatène et les encrypte
+
+ce token va etre envoyé au backend pour certaines requètes et récuperer des données le back va recevoir --> décrypter la signature --> refaire le calcul (header + payload) --> et verifier si les deux objets decrypter sont similaires
+
+JWT authentification stateless ( sans état : il ne stocke pas de données et ne fait référence à aucune transaction passée)
+
 ## 3 éléments importants :  
 Ensemble, ils sont combinés à une structure standard : header.payload.signature
 
-- header : L'en-tête répond à la question : Comment allons-nous calculer JWT ?   
+- un header : info du token : comment il est construit (algo, type, date expiration...)
 {"typ": "JWT",
 "alg": "HS256"}
-- payload : Le Payload nous aide à répondre : Que voulons-nous stocker dans le JWT ?
+- payload : données a crypter et a stocker dans le JWT 
 > {
 >  "userId": "abcd12345ghijk",
 >  "username": "bezkoder",
@@ -13,8 +23,9 @@ Ensemble, ils sont combinés à une structure standard : header.payload.signatur
 >  "iat": 1570238918, // iat (Issued at): time the JWT was issued at
 >  "exp": 1570238992 // exp (Expiration Time): JWT expiration time
 >}
-- Signature : C'est dans cette partie que nous utilisons l'algorithme de hachage dont je vous ai parlé plus haut.
+- Signature : vérifier et conserver l'intégrité des données : elle reprends les 2 premières parties, les concatène et les encrypte
 
+Ce token va etre envoyé au backend pour certaines requètes et récuperer des données le back va recevoir --> décrypter la signature --> refaire le calcul (header + payload) --> et verifier si les deux objets decrypter sont similaires
 
 ## trier ses fichiers / dossiers : 
 
@@ -39,4 +50,9 @@ Ensemble, ils sont combinés à une structure standard : header.payload.signatur
     - role.model.js
 
 - server.js : importe et initialise les modules et routes nécessaires, écoute les connexions.
+
+
+
+
+![325013279_680360187156740_7452717049033101924_n](https://user-images.githubusercontent.com/104756701/212075481-7f216edb-faa6-42b4-900c-a7b576f60c77.jpg)
 
