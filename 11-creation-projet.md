@@ -1,4 +1,4 @@
-## Mise en place SERVER et environnment travail :
+## Mise en place SERVER et environnement travail :
 
 - Créer un dossier : dossier-projet  
 - via terminal installer les pkg dans le dossier :   
@@ -17,7 +17,7 @@
 - créer fichier server .mjs :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120253fcf698bb294f1/cheat-sheet-code/server.mjs#L1-L21  
 
-- créer la structure a l'interieur du dossier :  
+- créer la structure a l'interieur du dossier avec des dossiers :  
       - Controllers  
       - Models  
       - Routes  
