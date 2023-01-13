@@ -24,6 +24,15 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120
       - Middlewares   
 
 ## Mise en place DATABASE et environnment de travail  
+> reminder : 
+> \q: Exit psql connection  
+> \c: Connect to a new database   
+> \list: List databases
+> \du: List all roles
+> \dt: List all tables        
+> DROP DATABASE ma_db : supprime la database ma_db   
+
+
 - Créer / configurer la database :   
       - lancer postgresql avec utilisateur par default "postgres" : **psql postgres**  
       - creer un role : postgres=# **CREATE ROLE name_project_admin WITH LOGIN PASSWORD 'password';**  
