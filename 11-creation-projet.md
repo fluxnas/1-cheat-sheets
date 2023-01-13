@@ -14,8 +14,8 @@
     Sequelize — object relational mapper for PostgreSQL npm install --save sequelize   
     pg-hstore is a node package for serializing and deserializing JSON data to hstore format — npm install pg-hstore   
 
-- créer fichier server .mjs :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120253fcf698bb294f1/cheat-sheet-code/server.mjs#L1-L21  
+- créer fichier server.mjs :   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73fc80c8db32dfa7f5/cheat-sheet-code/server.mjs#L1-L21
 
 - créer la structure a l'interieur du dossier avec des dossiers :  
       - Controllers  
@@ -53,8 +53,8 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120
 ## Connecter SERVER et DATABASE   
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/191d35f188bbff5447d381ed048a91f059a50aa8/cheat-sheet-code/.env.mjs#L1-L5   
-- créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**     
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/dc82344a339281faf1efca05fd77fe20685a4e50/cheat-sheet-code/connectDB.mjs#L1-L12   
-- créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/dc82344a339281faf1efca05fd77fe20685a4e50/cheat-sheet-code/pool.mjs#L1-L11   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/.env#L1-L3   
+- créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12   
+- créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9     
