@@ -66,7 +66,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
 
 ## Controllers
-INTRO :    
+*Explications controllers :*    
 Le contrôleur contient la logique permettant d'enregistrer l'utilisateur dans notre base de données et de se connecter.     
 Deux fonctions :  
 - signup : crée un nouvel utilisateur en hachant son mot de passe avec bcrypt avant de le sauvegarder dans la base de données.    
@@ -75,9 +75,22 @@ Deux fonctions :
       - compare le mot de passe avec le mot de passe existant dans la base de données s'il correspond,  
       - générer un jeton avec l'identifiant de l'utilisateur en utilisant ( JWT ) et créer un cookie avec Cookie-Parser pour l'utilisateur  
       - retourner les informations sur l'utilisateur  
+____
+*Explications variables d'environnements :*  
 Dès que votre projet Node.js utilisera une base de données, un stockage d'objets ou une API externe, vous devrez stocker des informations d'identification.
 Ces informations d'identification, comme les noms d'utilisateur, les mots de passe ou les tokens, sont appelés des secrets que vous devez garder évidemment secrets. -----> use **dotenv** library -----> variables stockées dans **.env** SECRET_KEY   
-CE FICHIER NE DOIT PAS ETRE POUSSER SUR LE GIT -----> .gitignore   
+CE FICHIER NE DOIT PAS ETRE POUSSER SUR LE GIT -----> créer **.gitignore**   
 ____
+- ajouter la **SECRET_KEY** dans le fichier **.env**   
+- créer le fichier **userController.mjs** comme ceci :   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eeffc1f55cdb4c50c78aff4d3af07d62e0fc14d6/cheat-sheet-code/userControllers.mjs#L1-L86   
 
+## Routes   
+Dans le dossier routes, configurez les routes pour l'application en utilisant le module Router fourni par Express.js. Créez donc un fichier dans le dossier routes appelé userRoutes.js. Dans la route d'inscription, le middleware est passé pour vérifier les doublons de noms d'utilisateurs et d'emails dans la base de données.  
+
+
+> si on export : **export const createUser = (request, response)** pour chaque const   
+> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'   
+> ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
+> --> alors on import comme ca : import client from './routes.mjs'   
 
