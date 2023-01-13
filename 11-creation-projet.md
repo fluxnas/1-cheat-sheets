@@ -25,12 +25,13 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120
 
 ## Mise en place DATABASE et environnment de travail  
 > reminder :   
-> \q: Exit psql connection    
-> \c: Connect to a new database    
-> \list: List databases  
-> \du: List all roles   
-> \dt: List all tables          
-> DROP DATABASE ma_db : supprime la database ma_db     
+> **\q** : Exit psql connection    
+> **\c** : Connect to a new database    
+> **\list** : List databases  
+> **\du** : List all roles   
+> **\dt** : List all tables          
+> **DROP DATABASE ma_db** : supprime la database ma_db     
+> **\conninfo** : info de connexion
 
 
 - Créer / configurer la database :   
