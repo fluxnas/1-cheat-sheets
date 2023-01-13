@@ -1,5 +1,7 @@
+## Mise en place SERVER et environnment travail :
+
 - Créer un dossier : dossier-projet  
-- se mettre dans le dossier via terminal :   
+- via terminal installer les pkg dans le dossier :   
       - npm init -y  
       - Express — Node.js framework : **npm install express** :     "run": "node index.mjs"  
       - Nodemon — Automatic restart of node when file changes : **npm install nodemon** :     "dev": "nodemon index.mjs"  
@@ -15,6 +17,24 @@
 - créer fichier server .mjs :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120253fcf698bb294f1/cheat-sheet-code/server.mjs#L1-L21  
 
+- créer la structure a l'interieur du dossier :  
+      - Controllers  
+      - Models  
+      - Routes  
+      - Middlewares   
 
-- créer dosier routes.mjs avec un fichier auth.mjs pour y mettre les controllers  
-- l'importer et le relationner avec le fichier index.mjs  
+## Mise en place DATABASE et environnment de travail  
+- Créer / configurer la database :   
+      - lancer postgresql avec utilisateur par default "postgres" : **psql postgres**  
+      - creer un role : postgres=# **CREATE ROLE name_project_admin WITH LOGIN PASSWORD 'password';**  
+      - donner le droit creer db au role : postgres=# **ALTER ROLE name_project_admin CREATEDB;**  
+      - sortir de postgres : postgres=# **\q**  
+      - relier pg et me : **psql -d postgres -U name_project_admin**   
+--> postgres=# se transforme en postgres=> (on est plus connecté en superuser)  
+      - creer une db : postgres=> **CREATE DATABASE name_project_db;**   
+      - voir les db dispo : postgres=> **\list**  
+      - se connecter a la nvlle db : postgres=> **\c name_project_db;**    
+      - creer une table :  
+                  - avec les infos voulues : name_project_db => **CREATE TABLE users ( ID SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(30) );**    
+                  - importer depuis un schema : https://drawsql.app/diagrams    
+      - 
