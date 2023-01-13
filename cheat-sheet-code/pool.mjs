@@ -3,9 +3,9 @@ import dotenv from "dotenv"
 dotenv.config()
 
 export const pool = new pg.Pool ({
-host: 'localhost',
-user: 'nom_db_admin',
-port: 5432,
-password: 'password',
-database: 'nom_projet'
+database: process.env.DATABASE_NAME,
+user: process.env.DATABASE_USER,
+password: process.env.DATABASE_PASSWORD,
+port: process.env.DATABASE_PORT,
+host: process.env.DATABASE_HOST,
 })
