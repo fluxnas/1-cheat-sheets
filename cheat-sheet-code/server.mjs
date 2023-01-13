@@ -16,6 +16,6 @@ server.use(cookieParser())
 
 
 // set port
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT
 //listening to server connection
 server.listen(PORT, () => {console.log(`server connected on ${PORT}`)})
