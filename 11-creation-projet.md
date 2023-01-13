@@ -66,6 +66,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
 
 ## Controllers
+INTRO :    
 Le contrôleur contient la logique permettant d'enregistrer l'utilisateur dans notre base de données et de se connecter.     
 Deux fonctions :  
 - signup : crée un nouvel utilisateur en hachant son mot de passe avec bcrypt avant de le sauvegarder dans la base de données.    
@@ -74,4 +75,9 @@ Deux fonctions :
       - compare le mot de passe avec le mot de passe existant dans la base de données s'il correspond,  
       - générer un jeton avec l'identifiant de l'utilisateur en utilisant ( JWT ) et créer un cookie avec Cookie-Parser pour l'utilisateur  
       - retourner les informations sur l'utilisateur  
+Dès que votre projet Node.js utilisera une base de données, un stockage d'objets ou une API externe, vous devrez stocker des informations d'identification.
+Ces informations d'identification, comme les noms d'utilisateur, les mots de passe ou les tokens, sont appelés des secrets que vous devez garder évidemment secrets. -----> use **dotenv** library -----> variables stockées dans **.env** SECRET_KEY   
+CE FICHIER NE DOIT PAS ETRE POUSSER SUR LE GIT -----> .gitignore   
+____
+
 
