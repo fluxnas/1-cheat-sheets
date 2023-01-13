@@ -75,7 +75,7 @@ ALTER TABLE
 ALTER TABLE
     "pictures" ADD CONSTRAINT "pictures_building_id_foreign" FOREIGN KEY("building_id") REFERENCES "buildings"("id");
 ALTER TABLE
-    "Buildings" ADD CONSTRAINT "buildings_admin_id_foreign" FOREIGN KEY("admin_id") REFERENCES "users"("id");
+    "buildings" ADD CONSTRAINT "buildings_admin_id_foreign" FOREIGN KEY("admin_id") REFERENCES "users"("id");
 ALTER TABLE
     "annonces" ADD CONSTRAINT "annonces_user_id_foreign" FOREIGN KEY("user_id") REFERENCES "users"("id");
 ALTER TABLE
