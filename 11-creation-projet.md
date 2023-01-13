@@ -30,12 +30,21 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/2fc6063e48b532ff82b59120
       - donner le droit creer db au role : postgres=# **ALTER ROLE name_project_admin CREATEDB;**  
       - sortir de postgres : postgres=# **\q**  
       - relier pg et me : **psql -d postgres -U name_project_admin**   
-            --> postgres=# se transforme en postgres=> (on est plus connecté en superuser)  
+      -----> postgres=# se transforme en postgres=> (on est plus connecté en superuser)  
       - creer une db : postgres=> **CREATE DATABASE name_project_db;**   
       - voir les db dispo : postgres=> **\list**  
       - se connecter a la nvlle db : postgres=> **\c name_project_db;**    
-- creer une table :  
+- creer une table :   
       - avec les infos voulues : name_project_db => **CREATE TABLE users ( ID SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(30) );**    
-      - importer depuis un schema : https://drawsql.app/diagrams   
-            -> example : https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs
-      - 
+      - importer depuis un schema : https://drawsql.app/diagrams    
+      -----> example : https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs   
+      - quitter postgres : **\q***  
+
+## Connecter SERVER et DATABASE   
+- créer un nouveau fichier .env a la racine : **.env**   
+-----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/191d35f188bbff5447d381ed048a91f059a50aa8/cheat-sheet-code/.env.mjs#L1-L5   
+- créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**     
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/dc82344a339281faf1efca05fd77fe20685a4e50/cheat-sheet-code/connectDB.mjs#L1-L12   
+- créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/dc82344a339281faf1efca05fd77fe20685a4e50/cheat-sheet-code/pool.mjs#L1-L11   
