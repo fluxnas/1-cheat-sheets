@@ -58,3 +58,20 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12   
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9     
+
+
+## Middleware 
+- créer fichier **userAuth.mjs** dans dossier ./nom_de_projet/middleware     
+-----> la logique qui vérifie si l'utilisateur ou l'email existe deja dans la db :
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
+
+## Controllers
+Le contrôleur contient la logique permettant d'enregistrer l'utilisateur dans notre base de données et de se connecter.     
+Deux fonctions :  
+- signup : crée un nouvel utilisateur en hachant son mot de passe avec bcrypt avant de le sauvegarder dans la base de données.    
+- login :  
+      - trouve l'email de la demande dans la base de données, s'il existe  
+      - compare le mot de passe avec le mot de passe existant dans la base de données s'il correspond,  
+      - générer un jeton avec l'identifiant de l'utilisateur en utilisant ( JWT ) et créer un cookie avec Cookie-Parser pour l'utilisateur  
+      - retourner les informations sur l'utilisateur  
+
