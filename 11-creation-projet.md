@@ -10,10 +10,9 @@
       - Dotenv :For access to your environment variable : **npm install dotenv**  
       - JSON Web Token : For generating tokens : **npm install jsonwebtoken**  
       - CookieParser : For setting cookies : **npm install cookie-parser**  
-      - cors : 
-
-    Sequelize — object relational mapper for PostgreSQL npm install --save sequelize   
-    pg-hstore is a node package for serializing and deserializing JSON data to hstore format — npm install pg-hstore   
+  
+    ((Sequelize — object relational mapper for PostgreSQL npm install --save sequelize))   
+    ((pg-hstore is a node package for serializing and deserializing JSON data to hstore format — npm install pg-hstore))   
 
 - créer fichier server.mjs :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73fc80c8db32dfa7f5/cheat-sheet-code/server.mjs#L1-L21
