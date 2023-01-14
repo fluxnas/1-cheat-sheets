@@ -53,6 +53,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 ## Connecter SERVER et DATABASE   
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
+- créer le **JWT_SECRETKEY** et ajouter dans le fichier **.env**   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/.env#L1-L3  
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9   
@@ -84,12 +85,6 @@ Dès que votre projet Node.js utilisera une base de données, un stockage d'obje
 Ces informations d'identification, comme les noms d'utilisateur, les mots de passe ou les tokens, sont appelés des secrets que vous devez garder évidemment secrets. -----> use **dotenv** library -----> variables stockées dans **.env** SECRET_KEY   
 CE FICHIER NE DOIT PAS ETRE POUSSER SUR LE GIT -----> créer **.gitignore**   
 ____
-- générer la **SECRET_KEY** :  
-      - installer randombytes et writefile : **npm i randombytes writefile**   
-      - créer un fichier a la racine : **generateSecret.mjs**    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e8e9513464a0c9635a603889f5115f1f4c46900d/cheat-sheet-code/generateSecret.mjs#L1-L10  
-      - linker dans le .env   
-- ajouter la **SECRET_KEY** dans le fichier **.env**    
 - créer le fichier **userController.mjs** comme ceci :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eeffc1f55cdb4c50c78aff4d3af07d62e0fc14d6/cheat-sheet-code/userControllers.mjs#L1-L86   
 
