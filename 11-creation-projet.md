@@ -16,10 +16,12 @@
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73fc80c8db32dfa7f5/cheat-sheet-code/server.mjs#L1-L21
 
 - créer la structure a l'interieur du dossier avec des dossiers :  
-      - Controllers  
-      - Models  
-      - Routes  
-      - Middlewares   
+      - Middleware : l'authentification -----> ***auth.mjs***   
+      - Models : connexion DB -----> ***pools.mjs*** & ***dbConnect.mjs***   
+      - Routes : lien des routes '/' -----> ***router.mjs***   
+      - Controllers : methodes/logiques de chaque routes, queries/requêtes -----> ***login.mjs register.mjs logout.mjs***     
+ 
+  
 
 ## Mise en place DATABASE et environnment de travail  
 > reminder :   
