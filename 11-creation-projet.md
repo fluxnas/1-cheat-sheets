@@ -60,7 +60,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
 
 
-## Middleware 
+## Middleware : authentification
 - créer fichier **userAuth.mjs** dans dossier ./nom_de_projet/middleware     
 -----> la logique qui vérifie si l'utilisateur ou l'email existe deja dans la db :
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
