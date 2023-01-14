@@ -53,11 +53,11 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 ## Connecter SERVER et DATABASE   
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/.env#L1-L3   
-- créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/.env#L1-L3  
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9     
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9   
+- créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
 
 
 ## Middleware 
