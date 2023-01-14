@@ -3,8 +3,8 @@
 - Créer un dossier : dossier-projet  
 - via terminal installer les pkg dans le dossier :   
       - npm init -y  
-      - Express — Node.js framework : **npm install express** :     "run": "node index.mjs"  
-      - Nodemon — Automatic restart of node when file changes : **npm install nodemon** :     "dev": "nodemon index.mjs"  
+      - Express — Node.js framework : **npm install express** -----> dans le script package.json : "run": **"node index.mjs"**  
+      - Nodemon — Automatic restart of node when file changes : **npm install nodemon** -----> dans le script package.json : **"dev": "nodemon index.mjs"**  
       - Pg is PostgreSQL client for Node : **npm install pg**  
       - Bcrypt : For password hashing : **npm install bcrypt**  
       - Dotenv :For access to your environment variable : **npm install dotenv**  
