@@ -10,6 +10,7 @@
       - Dotenv :For access to your environment variable : **npm install dotenv**  
       - JSON Web Token : For generating tokens : **npm install jsonwebtoken**  
       - CookieParser : For setting cookies : **npm install cookie-parser**  
+      - cors : 
 
     Sequelize — object relational mapper for PostgreSQL npm install --save sequelize   
     pg-hstore is a node package for serializing and deserializing JSON data to hstore format — npm install pg-hstore   
