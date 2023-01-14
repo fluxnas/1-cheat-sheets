@@ -61,7 +61,10 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5
 
 
 ## Middleware : authentification
-- créer fichier **userAuth.mjs** dans dossier ./nom_de_projet/middleware     
+- créer fichier **auth.mjs** dans dossier ./nom_de_projet/middleware :   
+-----> la logique qui recupere le token du header et qui verifie si cest le meme que celui stocké dans .env :   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/bafbd8779bb47f7a38df1b3c69d2e527396bc3fb/cheat-sheet-code/auth-verify-token.mjs#L1-L22
+- créer fichier **douclons.mjs** dans dossier ./nom_de_projet/middleware     
 -----> la logique qui vérifie si l'utilisateur ou l'email existe deja dans la db :
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
 
