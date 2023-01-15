@@ -91,9 +91,10 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eeffc1f55cdb4c50c78aff4d
 ## Routes   
 Dans le dossier routes, configurez les routes pour l'application en utilisant le module Router fourni par Express.js. Créez donc un fichier dans le dossier routes appelé userRoutes.js. Dans la route d'inscription, le middleware est passé pour vérifier les doublons de noms d'utilisateurs et d'emails dans la base de données.  
 
-
+> reminder :   
 > si on export : **export const createUser = (request, response)** pour chaque const   
-> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'   
+> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'
+>      
 > ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
 > --> alors on import comme ca : import client from './routes.mjs'   
 
