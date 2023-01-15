@@ -51,6 +51,14 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
       - quitter postgres : **\q***  
 
 ## Connecter SERVER et DATABASE   
+
+> reminder :   
+> si on export : **export const createUser = (request, response)** pour chaque const   
+> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'
+>      
+> ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
+> --> alors on import comme ca : import client from './routes.mjs'  
+
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
 - créer le **JWT_SECRETKEY** et ajouter dans le fichier **.env**   
@@ -88,13 +96,4 @@ ____
 - créer le fichier **userController.mjs** comme ceci :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eeffc1f55cdb4c50c78aff4d3af07d62e0fc14d6/cheat-sheet-code/userControllers.mjs#L1-L86   
 
-## Routes   
-Dans le dossier routes, configurez les routes pour l'application en utilisant le module Router fourni par Express.js. Créez donc un fichier dans le dossier routes appelé userRoutes.js. Dans la route d'inscription, le middleware est passé pour vérifier les doublons de noms d'utilisateurs et d'emails dans la base de données.  
-
-> reminder :   
-> si on export : **export const createUser = (request, response)** pour chaque const   
-> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'
->      
-> ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
-> --> alors on import comme ca : import client from './routes.mjs'   
 
