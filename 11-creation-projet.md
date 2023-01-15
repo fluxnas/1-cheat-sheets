@@ -62,7 +62,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
 - créer le **JWT_SECRETKEY** et ajouter dans le fichier **.env**   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/.env#L1-L3  
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e16f0f3d113532918251a55599c86548900397ff/cheat-sheet-code/.env#L1-L6
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9   
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
