@@ -1,6 +1,6 @@
-import jwt from "jsonwebtoken";
+import jwt from 'jsonwebtoken'
 
-const auth = async (request, response, next) => {
+export const auth = async (request, response, next) => {
   //   get the token from the authorization header
   const token = await request.cookies.access_token;
 
@@ -9,7 +9,7 @@ const auth = async (request, response, next) => {
   }
   //check if the token matches the supposed origin
   try {
-    const data = jwt.verify(token, process.env.JWT_SECRET);
+    const data = jwt.verify(token, process.env.JWT_SECRETKEY);
     request.userId = data.user.id;
     request.userEmail = data.user.email;
     request.exp = data.exp;
@@ -17,6 +17,4 @@ const auth = async (request, response, next) => {
   } catch {
     return response.sendStatus(403);
   }
-};
-
-export default auth;
+}
