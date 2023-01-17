@@ -54,17 +54,17 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 
 > reminder :   
 > si on export : **export const createUser = (request, response)** pour chaque const   
-> --> alors on import comme ca : import { allUsers, createUser } from './routes.mjs'
+> --> alors on import comme ca : **import { allUsers, createUser } from './routes.mjs'**
 >      
 > ou si on utilise qu'un seul export a la fin du fichier : **export default client**   
-> --> alors on import comme ca : import client from './routes.mjs'  
+> --> alors on import comme ca : **import client from './routes.mjs'**  
 
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
 - créer le **JWT_SECRETKEY** et ajouter dans le fichier **.env**   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e16f0f3d113532918251a55599c86548900397ff/cheat-sheet-code/.env#L1-L6
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/pool.mjs#L1-L9   
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/0c08328c50fe8d102f485a0c413edf34d2f1204a/cheat-sheet-code/pool.mjs#L1-L9  
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
 
@@ -76,6 +76,9 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/bafbd8779bb47f7a38df1b3c
 - créer fichier **doublons.mjs** dans dossier ./nom_de_projet/middleware     
 -----> la logique qui vérifie si l'utilisateur ou l'email existe deja dans la db :
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
+- créer fichier **emailValide.mjs** dans dossier ./nom_de_projet/middleware   
+-----> la logique qui verifie si l'email est valide avec un systeme d'auth par mail 
+
 
 ## Controllers
 *Explications controllers :*    
