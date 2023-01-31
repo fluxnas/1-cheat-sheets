@@ -69,6 +69,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e16f0f3d113532918251a55599c86548900397ff/cheat-sheet-code/.env#L1-L6
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
+(le client envoie des requêtes au serveur et le serveur utilise un pool de connexions pour y répondre utiliser pool ameliore performance vitesse) 
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/0c08328c50fe8d102f485a0c413edf34d2f1204a/cheat-sheet-code/pool.mjs#L1-L9  
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
