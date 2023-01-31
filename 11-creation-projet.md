@@ -52,7 +52,8 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 - creer une table :   
       - avec les infos voulues : name_project_db => **CREATE TABLE users ( ID SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(30) );**    
       - importer depuis un schema : https://drawsql.app/diagrams    
-      -----> example : https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs   
+      -----> example : https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs  
+      https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs#L1-L90
       - quitter postgres : **\q***  
 
 ## Connecter SERVER et DATABASE   
