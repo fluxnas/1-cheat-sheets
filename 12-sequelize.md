@@ -8,7 +8,7 @@ commencer :
 - dans le terminal : **npm install sequelize-cli**   
 - creer un nouveau folder a la racine du backend : **sequelize**   
 - aller dans le dossier : **cd sequelize**    
-> **npx sequelize-cli init**    
+- **npx sequelize-cli init**    
 -----> cela créer un dossier avec :   
 -----> - dossier config   
 -----> - dossier migrations   
