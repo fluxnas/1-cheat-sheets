@@ -15,10 +15,11 @@ commencer :
 -----> - dossier migrations   
 -----> - dossier models   
 -----> - dossier seeders   
-- dans le dossier config : config.json (changer par **config.js** )  + créer le fichier **.env**
+- dans le dossier config : config.json
 -> 3 environnements : developpement, test, production  
 -> et changer le fichier :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/41d3f97b80ba939309429e0b0f33c76df1dad8e0/cheat-sheet-code/config.js#L1-L39
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3480bb10d7827fdf8fcb71777ce2f7311bc5c126/cheat-sheet-code/config.js#L1-L40
++ créer le fichier **.env**
 - dans le dossier **models** on a le fichier **index.js** qui contient les models de db quon va ajouter et changer  
 > changer le debut du fichier avec : 
 ....
