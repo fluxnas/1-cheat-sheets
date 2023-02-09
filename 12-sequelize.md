@@ -6,6 +6,7 @@ librairie qui permet de gerer tout les trucs lourd en background
 commencer : 
 - creer son projet, son server, .gitignor, .env ...   
 - dans le terminal : **npm install sequelize-cli**   
+- dans le terminal : **npm install -g sequelize**
 - creer un nouveau folder a la racine du backend : **sequelize**   
 - aller dans le dossier : **cd sequelize**    
 - **npx sequelize-cli init**    
