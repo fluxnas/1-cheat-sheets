@@ -4,15 +4,17 @@
 - via terminal installer les pkg dans le dossier :   
       - **npm init -y**    
       - Express — Node.js framework : **npm install express**   
-      ------> dans le script package.json : **"run": "node server.mjs"**  
       - Nodemon — Automatic restart of node when file changes : **npm install nodemon**   
-      ------> dans le script package.json : **"dev": "nodemon server.mjs"**  
       - Pg is PostgreSQL client for Node : **npm install pg**  
       - Bcrypt : For password hashing : **npm install bcrypt**  
       - Dotenv :For access to your environment variable : **npm install dotenv**  
       - JSON Web Token : For generating tokens : **npm install jsonwebtoken**  
       - CookieParser : For setting cookies : **npm install cookie-parser**  
 -----> **npm install express nodemon pg bcrypt dotenv jsonwebtoken cookie-parser**   
+-----> dans le package.json :   
+**,   
+"run": "node server.mjs",    
+"dev": "nodemon server.mjs"**    
 
 - créer un nouveau fichier .env a la racine : **.env**   
 -----> mettre le port : **PORT : 3000**   
