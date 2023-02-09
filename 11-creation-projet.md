@@ -2,7 +2,7 @@
 
 - Créer un dossier : dossier-projet  
 - via terminal installer les pkg dans le dossier :   
-      - **npm init -y** 
+      - **npm init -y**    
       - Express — Node.js framework : **npm install express**   
       ------> dans le script package.json : **"run": "node server.mjs"**  
       - Nodemon — Automatic restart of node when file changes : **npm install nodemon**   
