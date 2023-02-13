@@ -44,7 +44,8 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
 - Créer / configurer la database :   
       - lancer postgresql avec utilisateur par default "postgres" : **psql postgres**  
       - creer un role : postgres=# **CREATE ROLE name_project_admin WITH LOGIN PASSWORD 'password';**  
-      - donner le droit creer db au role : postgres=# **ALTER ROLE name_project_admin CREATEDB;**  
+      - donner le droit creer db au role : postgres=# **ALTER ROLE name_project_admin CREATEDB;**    
+**ALTER ROLE name_project_admin LOGIN;** 
       - sortir de postgres : postgres=# **\q**  
       - relier pg et me : **psql -d postgres -U name_project_admin**   
       -----> postgres=# se transforme en postgres=> (on est plus connecté en superuser)  
