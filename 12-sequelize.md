@@ -18,7 +18,7 @@ commencer :
 - dans le dossier config : changer config.json par config.js
 -> 3 environnements : developpement, test, production  
 -> et changer le fichier :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eaa7b2ac111f86f915cb584f61daf5ea74cfd163/cheat-sheet-code/config.js#L1-L39
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/1d63e637b28d12a55e70c2c96dd813bd0fe2a748/cheat-sheet-code/config.js#L1-L39
 + créer le fichier **.env**
 - dans le dossier **models** on a le fichier **index.js** qui contient les models de db quon va ajouter et changer  
 > changer le debut du fichier avec : 
