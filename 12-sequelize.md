@@ -15,7 +15,7 @@ commencer :
 -----> - dossier migrations   
 -----> - dossier models   
 -----> - dossier seeders   
-- dans le dossier config : config.json
+- dans le dossier config : changer config.json par config.js
 -> 3 environnements : developpement, test, production  
 -> et changer le fichier :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eaa7b2ac111f86f915cb584f61daf5ea74cfd163/cheat-sheet-code/config.js#L1-L39
