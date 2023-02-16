@@ -21,13 +21,8 @@ commencer :
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/935bd8c19a4e3f955f5e4e216108418d41915f59/cheat-sheet-code/config.js#L1-L24
 + créer le fichier **.env**  
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/fafde0f6ca38d036363420f226c14dae50c92681/cheat-sheet-code/.env-2#L1-L4
-- créer la db : 
+- créer la db dans le terminal 
 - dans le dossier **models** on a le fichier **index.js** qui contient les models de db quon va ajouter et changer  
-> changer le debut du fichier avec : 
-....
-...
-...
-
 - dans le terminal : créer le premier model dans le dossier **sequelize** : **npx sequelize-cli model:generate --name User --attributes first_name:string,last_name:string,email:string**
 --> ca créait un fichier user.js dans le model et aussi un fichier dans le dossier migration
 - changer fichier user.js :
