@@ -18,7 +18,7 @@ commencer :
 - dans le dossier config : changer config.json par config.js
 -> 3 environnements : developpement, test, production  
 -> et changer le fichier :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/1d63e637b28d12a55e70c2c96dd813bd0fe2a748/cheat-sheet-code/config.js#L1-L39
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/935bd8c19a4e3f955f5e4e216108418d41915f59/cheat-sheet-code/config.js#L1-L24
 + créer le fichier **.env**  
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/087d898de9cd499295f5974d0dd0cf3b17afcb86/cheat-sheet-code/.env-2#L1-L4
 - créer la db : 
