@@ -2,6 +2,7 @@
 
 librairie qui permet de gerer tout les trucs lourd en background
 
+ref : https://marquesdev.gitbooks.io/1-jour-1-bibliotheque-sequelize/content/chapitre-4-pas-a-pas/gestions-des-utilisateurs/creation-des-modeles-et-des-migrations.html.  
 
 commencer : 
 - creer son projet, son server, .gitignor, .env ...   
@@ -29,3 +30,4 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/fafde0f6ca38d036363420f2
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e6920ff6d58d3184b48bc68a438a7421b148398d/cheat-sheet-code/user.js#L1-L30
 - le fichier migrations : gère les modifs du code source permet de suivre les modifs apporté a la db
 - dans le terminal dossier sequelize : **npx sequelize-cli db:migrate**
+-  dans le fichier migration qui vient d'etre créer changer createdAt et updatedAt par created_at et updated_at
