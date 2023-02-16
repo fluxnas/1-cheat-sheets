@@ -20,7 +20,7 @@ commencer :
 -> et changer le fichier :   
 https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/935bd8c19a4e3f955f5e4e216108418d41915f59/cheat-sheet-code/config.js#L1-L24
 + créer le fichier **.env**  
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/087d898de9cd499295f5974d0dd0cf3b17afcb86/cheat-sheet-code/.env-2#L1-L4
+https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/fafde0f6ca38d036363420f226c14dae50c92681/cheat-sheet-code/.env-2#L1-L4
 - créer la db : 
 - dans le dossier **models** on a le fichier **index.js** qui contient les models de db quon va ajouter et changer  
 > changer le debut du fichier avec : 
