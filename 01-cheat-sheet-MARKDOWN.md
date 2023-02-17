@@ -18,7 +18,7 @@
 ### FONT  
 **bold :** **salut :** \*\*salut\*\*  
 **italic et bold :** ***salut :*** \*\*\*salut\*\*\*  
-**italic :** _salut :_  \_salut\_
+**italic :** _salut :_  \_salut\_   
 **barré :** ~~salut~~ : \~\~salut\~\~   
 
 ## **LISTS :**
