@@ -40,6 +40,11 @@
 ### CODE INCORPORE :
 \`salut\` **:** `salut`   
  
+### LIGNES HORIZONTALES 
+\***
+\---
+\- - -
+
 ### BLOCS-NOTES : 
 \> quote  
 \> quote 
