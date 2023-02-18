@@ -83,8 +83,8 @@ va donner :[BeCode](https://becode.org/)
 
 ### BLOCNOTES
 laisser 4 espaces avant la phrase, rendu :    
-    "Welcome to your task manager, Press:
-    1. to see all your tasks
+     "Welcome to your task manager, Press:   
+     1. to see all your tasks.  
 
 
 
