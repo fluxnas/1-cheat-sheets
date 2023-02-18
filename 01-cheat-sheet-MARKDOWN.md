@@ -81,8 +81,10 @@ va donner :[BeCode](https://becode.org/)
 | cellule 1 | cellule 2 | cellule 3 |
 | cellule 4 | cellule 5 | cellule 6 |
 
-
-
+### BLOCNOTES
+laisser 4 espaces avant la phrase, rendu :    
+    "Welcome to your task manager, Press:
+    1. to see all your tasks
 
 
 
