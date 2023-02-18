@@ -82,9 +82,11 @@ va donner :[BeCode](https://becode.org/)
 | cellule 4 | cellule 5 | cellule 6 |
 
 ### BLOCNOTES
-laisser 4 espaces avant la phrase, rendu :    
-     "Welcome to your task manager, Press:   
-     1. to see all your tasks.  
+laisser 1 saut de ligne et 4 espaces avant la phrase, rendu :    
+
+    "Welcome to your task manager, Press:
+    1. to see all your tasks
+    2. to add a task
 
 
 
