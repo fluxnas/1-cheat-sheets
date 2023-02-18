@@ -57,7 +57,9 @@
  
 ### IMAGES : 
 \![nom]\(https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg) 
-![nom](https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg)   
+![nom](https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg) 
+
+[![name](link to image on GH)](link to your URL)
  
 ### TABLE :  
 \| Colonne 1 \| Colonne 2 | Colonne 3 |  
