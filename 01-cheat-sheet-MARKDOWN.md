@@ -41,9 +41,9 @@
 \`salut\` **:** `salut`   
  
 ### LIGNES HORIZONTALES 
-\***
-\---
-\- - -
+\***  
+\---    
+\- - -    
 
 ### BLOCS-NOTES : 
 \> quote  
