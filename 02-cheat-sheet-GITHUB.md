@@ -30,7 +30,7 @@
 2. creer une branche : **git branch nomDeBranche**  
     creer une branche et se mettre dans la branche : **git checkout -b nomDeBranche**   
     
-## PUSH SUR MASTER GTIHUB
+## PUSH SUR MASTER GITHUB
 1. **git add** : dans le terminal : VERIFIER QU’ON EST SUR LA BONNE BRANCHE
 2. **git commit -m “...”**
 3. **git push** : ca ouvre un pop up dans github 
@@ -48,6 +48,14 @@
 6. **git push** : ca ouvre un pop up dans github 
 7. verifier les modifs entre les fichiers > valider > merger
 8. **git pull** : recupe le fichier en local sur son ordi
+
+## FUSIONNER UNE BRANCHE AVEC LA MASTER 
+- se placer sur master : git checkout master
+- merge la branche cible : git merge nom-branche
+> les changements on été eeffectué   
+- push sur le git : voir plus haut 
+
+
 
 ## COMMANDES USEFULL
 
