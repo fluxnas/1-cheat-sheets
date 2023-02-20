@@ -19,9 +19,9 @@ commencer :
 - dans le dossier config : changer config.json par config.js
 -> 3 environnements : developpement, test, production  
 -> et changer le fichier :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/935bd8c19a4e3f955f5e4e216108418d41915f59/cheat-sheet-code/config.js#L1-L24
+https://github.com/fluxnas/1-cheat-sheets/blob/935bd8c19a4e3f955f5e4e216108418d41915f59/cheat-sheet-code/config.js#L1-L24
 + créer le fichier **.env**  
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/fafde0f6ca38d036363420f226c14dae50c92681/cheat-sheet-code/.env-2#L1-L4
+https://github.com/fluxnas/1-cheat-sheets/blob/fafde0f6ca38d036363420f226c14dae50c92681/cheat-sheet-code/.env-2#L1-L4
 - créer la db dans le terminal 
 > - CREATE ROLE name_project_admin;
 > - ALTER ROLE name_project_admin LOGIN;
