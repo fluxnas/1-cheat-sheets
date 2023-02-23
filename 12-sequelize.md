@@ -42,3 +42,6 @@ https://github.com/fluxnas/1-cheat-sheets/blob/fb29562e609258c2bbac18bf944951450
 - dans le terminal dossier sequelize : **npx sequelize-cli db:migrate**
 > - on peut revenir en arrière : **npx sequelize-cli db:migrate:undo**
 -  dans le fichier migration qui vient d'etre créer changer createdAt et updatedAt par created_at et updated_at
+- on peut créer un script pour garder une trace dans le package.json :    
+**"make-model" : "npx sequelize-cli model:generate --name user --attributes first_name:string,last_name:string,email:string"**    
+**"migrate" : "npx sequelize-cli db:migrate"**
