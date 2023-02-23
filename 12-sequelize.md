@@ -36,10 +36,9 @@ https://github.com/fluxnas/1-cheat-sheets/blob/fafde0f6ca38d036363420f226c14dae5
 - dans le dossier **models** on a le fichier **index.js** qui contient les models de db quon va ajouter et changer  
 - dans le terminal : créer le premier model dans le dossier sequelize : **npx sequelize-cli model:generate --name user --attributes first_name:string,last_name:string,email:string**
 --> ca créait un fichier user.js dans le model et aussi un fichier dans le dossier migration
-- changer fichier user.js :
-https://github.com/fluxnas/1-cheat-sheets/blob/e6920ff6d58d3184b48bc68a438a7421b148398d/cheat-sheet-code/user.js#L1-L30
+- rajouter l'id dans le fichier user.js : 
+https://github.com/fluxnas/1-cheat-sheets/blob/fb29562e609258c2bbac18bf9449514502b96247/cheat-sheet-code/user.js#L1-L30
 - le fichier migrations : gère les modifs du code source permet de suivre les modifs apporté a la db
 - dans le terminal dossier sequelize : **npx sequelize-cli db:migrate**
 > - on peut revenir en arrière : **npx sequelize-cli db:migrate:undo**
 -  dans le fichier migration qui vient d'etre créer changer createdAt et updatedAt par created_at et updated_at
-- rajouter l'id dans le fichier user : 
