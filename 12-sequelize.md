@@ -45,5 +45,6 @@ https://github.com/fluxnas/1-cheat-sheets/blob/fb29562e609258c2bbac18bf944951450
 - on peut créer un script pour garder une trace dans le package.json :    
 **"make-model" : "npx sequelize-cli model:generate --name user --attributes first_name:string,last_name:string,email:string"**    
 et **"migrate" : "npx sequelize-cli db:migrate"**
-- s'il n'arrive pas a trouver certains fichier : créer un fichier : **.sequelizerc**   
-https://github.com/fluxnas/1-cheat-sheets/blob/ffddc562cd47f7cf0086ef5753afeb5678b56a31/cheat-sheet-code/.sequelizerc#L1-L8
+- s'il n'arrive pas a trouver certains fichier : créer un fichier à la racine : **.sequelizerc**   
+https://github.com/fluxnas/1-cheat-sheets/blob/725d3596258dfe267644e10b57923827b7fd579e/cheat-sheet-code/.sequelizerc#L1-L8
+- creer connexion db et routers/controllers
