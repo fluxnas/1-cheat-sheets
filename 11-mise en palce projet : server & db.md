@@ -56,7 +56,7 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
       - avec les infos voulues : name_project_db => **CREATE TABLE users ( ID SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(30) );**    
       - importer depuis un schema : https://drawsql.app/diagrams    
       -----> example : 
-      https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs#L1-L90
+      https://github.com/fluxnas/cheat-sheet-code/blob/7bcf7bc8e8a5beca73e9674a08e0b71055c3e15c/cheat-sheet-code/example-db-creation.mjs#L1-L90
       - quitter postgres : **\q***  
 
 ## Connecter SERVER et DATABASE   
@@ -70,21 +70,21 @@ https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/5132f321397a2b98b2a48f73
   
 - créer le **JWT_SECRETKEY** dans le fichier **.env**   
 -----> en utilisant ce site pour les password : https://www.motdepasse.xyz/    
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/e16f0f3d113532918251a55599c86548900397ff/cheat-sheet-code/.env#L1-L6
+https://github.com/fluxnas/cheat-sheet-code/blob/e16f0f3d113532918251a55599c86548900397ff/cheat-sheet-code/.env#L1-L6
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **pool.mjs**    
 (le client envoie des requêtes au serveur et le serveur utilise un pool de connexions pour y répondre utiliser pool ameliore performance vitesse) 
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/0c08328c50fe8d102f485a0c413edf34d2f1204a/cheat-sheet-code/pool.mjs#L1-L9  
+https://github.com/fluxnas/cheat-sheet-code/blob/0c08328c50fe8d102f485a0c413edf34d2f1204a/cheat-sheet-code/pool.mjs#L1-L9  
 - créer un nouveau fichier dans dossier ./nom_de_projet/models : **connectDB.mjs**      
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
+https://github.com/fluxnas/cheat-sheet-code/blob/b1c467719a5db3470660ebb5db7c37c0bb6daf3a/cheat-sheet-code/dbConnect.mjs#L1-L12       
 
 
 ## Middleware : authentification
 - créer fichier **auth.mjs** dans dossier ./nom_de_projet/middleware :   
 -----> la logique qui recupere le token du header et qui verifie si cest le meme que celui stocké dans .env :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/bafbd8779bb47f7a38df1b3c69d2e527396bc3fb/cheat-sheet-code/auth-verify-token.mjs#L1-L22
+https://github.com/fluxnas/cheat-sheet-code/blob/bafbd8779bb47f7a38df1b3c69d2e527396bc3fb/cheat-sheet-code/auth-verify-token.mjs#L1-L22
 - créer fichier **doublons.mjs** dans dossier ./nom_de_projet/middleware     
 -----> la logique qui vérifie si l'utilisateur ou l'email existe deja dans la db :
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
+https://github.com/fluxnas/cheat-sheet-code/blob/3082b60fde690f86d6404e6967ad1bb6d506c4d7/cheat-sheet-code/userAuth.mjs#L1-L43
 - créer fichier **emailValide.mjs** dans dossier ./nom_de_projet/middleware   
 -----> la logique qui verifie si l'email est valide avec un systeme d'auth par mail 
 
@@ -106,6 +106,6 @@ Ces informations d'identification, comme les noms d'utilisateur, les mots de pas
 CE FICHIER NE DOIT PAS ETRE POUSSER SUR LE GIT -----> créer **.gitignore**   
 ____
 - créer le fichier **userController.mjs** comme ceci :   
-https://github.com/fluxnas/00-CHEAT-SHEETS-COURSES/blob/eeffc1f55cdb4c50c78aff4d3af07d62e0fc14d6/cheat-sheet-code/userControllers.mjs#L1-L86   
+https://github.com/fluxnas/cheat-sheet-code/blob/eeffc1f55cdb4c50c78aff4d3af07d62e0fc14d6/cheat-sheet-code/userControllers.mjs#L1-L86   
 
 
