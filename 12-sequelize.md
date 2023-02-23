@@ -44,4 +44,6 @@ https://github.com/fluxnas/1-cheat-sheets/blob/fb29562e609258c2bbac18bf944951450
 -  dans le fichier migration qui vient d'etre créer changer createdAt et updatedAt par created_at et updated_at
 - on peut créer un script pour garder une trace dans le package.json :    
 **"make-model" : "npx sequelize-cli model:generate --name user --attributes first_name:string,last_name:string,email:string"**    
-**"migrate" : "npx sequelize-cli db:migrate"**
+et **"migrate" : "npx sequelize-cli db:migrate"**
+- s'il n'arrive pas a trouver certains fichier : créer un fichier : **.sequelizerc**   
+https://github.com/fluxnas/1-cheat-sheets/blob/ffddc562cd47f7cf0086ef5753afeb5678b56a31/cheat-sheet-code/.sequelizerc#L1-L8
