@@ -54,6 +54,6 @@ https://github.com/fluxnas/1-cheat-sheets/blob/725d3596258dfe267644e10b57923827b
 
 - terminal : **npx sequelize-cli migration:create --name modify_users_add_new_fields**
 - changer le fichier de migration : 
-https://github.com/fluxnas/1-cheat-sheets/blob/edb0786badfaa6c306359fcd068eadca8d2292c4/cheat-sheet-code/migration.js#L1-L17
+https://github.com/fluxnas/1-cheat-sheets/blob/9831c80debdd310c4423c3215c1ee34efcc2b970/cheat-sheet-code/migration.js#L1-L18
 - ajouter les changements dans le model 
 - run la migration : terminal : **npx sequelize-cli db:migrate**
