@@ -2,7 +2,9 @@
 
 librairie qui permet de gerer tout les trucs lourd en background
 
-ref : https://marquesdev.gitbooks.io/1-jour-1-bibliotheque-sequelize/content/chapitre-4-pas-a-pas/gestions-des-utilisateurs/creation-des-modeles-et-des-migrations.html.  
+ref : 
+- https://marquesdev.gitbooks.io/1-jour-1-bibliotheque-sequelize/content/chapitre-4-pas-a-pas/gestions-des-utilisateurs/creation-des-modeles-et-des-migrations.html    
+- https://runebook.dev/fr/docs/sequelize/manual/migrations    
 
 commencer : 
 - creer son projet, son server, .gitignor, .env ...   
