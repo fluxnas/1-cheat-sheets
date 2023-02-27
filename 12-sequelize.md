@@ -48,3 +48,12 @@ et **"migrate" : "npx sequelize-cli db:migrate"**
 - s'il n'arrive pas a trouver certains fichier : créer un fichier à la racine : **.sequelizerc**   
 https://github.com/fluxnas/1-cheat-sheets/blob/725d3596258dfe267644e10b57923827b7fd579e/cheat-sheet-code/.sequelizerc#L1-L8
 - creer connexion db et routers/controllers
+
+
+# créer une migration
+
+- terminal : **npx sequelize-cli migration:create --name modify_users_add_new_fields**
+- changer le fichier de migration : 
+https://github.com/fluxnas/1-cheat-sheets/blob/edb0786badfaa6c306359fcd068eadca8d2292c4/cheat-sheet-code/migration.js#L1-L17
+- ajouter les changements dans le model 
+- run la migration : terminal : **npx sequelize-cli db:migrate**
