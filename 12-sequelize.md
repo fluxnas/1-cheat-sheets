@@ -62,10 +62,32 @@ https://github.com/fluxnas/1-cheat-sheets/blob/9831c80debdd310c4423c3215c1ee34ef
 
 
 # ajouter une image cloudinary
-- aller dans modele : ajouter : 
-    image: {   
-      type: DataTypes.STRING,   
-    }   
-- installer le pack multer : terminal : **npm i --save multer**
-- dans le controller : **const multer = require('multer')** et **const path = require('path')**
-
+- creer la route dans le user : requête : **server.post("/user/image", uploadImage)**
+- creer la connexion a cloudinary : (provisoirement dans le **imageController.js**
+const cloudinaryConfig = () => {   
+  cloudinary.config({    // ==> basic cloudinary config (you will retrieve the infos in your cloudinary account)  
+  cloud_name: process.env.CLOUD_NAME,   
+  api_key: process.env.API_KEY,  
+  api_secret: process.env.API_SECRET   
+});   
+}   
+- ajouter dans le .env les infos de cloudinary : https://console.cloudinary.com/console/c-8eb8e0979c97e1fa04da1c80a0bb36/media_library/folders/home   
+**CLOUD_NAME=|||    
+API_KEY=|||  
+API_SECRET=|||**   
+-> et l'importer dans server.mjs (avec le controller) :    
+**import image from "./controllers/imageController.js";   
+const { uploadImage, cloudinaryConfig } = image;** 
+-> et importer aussi dans server.mjs : **cloudinaryConfig();**   
+- installer dans terminal : **npm install express-fileupload**
+-> importer dans server.mjs : **import fileUpload from "express-fileupload";**   
+-> et :   
+**server.use(   
+  fileUpload({   
+    useTempFiles: true,   
+    limits: { fileSize: 50 * 2024 * 1024 },   
+  })   
+);**   
+- creer le controller image : **uploadImage** dans **imageController.js**   
+https://github.com/fluxnas/1-cheat-sheets/blob/26d8f29cd18334ce5561c539d6bd497f621795b7/cheat-sheet-code/imageController.js#L1-L38
+- tester avec insomnia : requete put, changer json par multipart form, entrer image et telecharger l'image
