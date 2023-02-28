@@ -61,7 +61,7 @@ https://github.com/fluxnas/1-cheat-sheets/blob/9831c80debdd310c4423c3215c1ee34ef
 
 
 
-# ajouter une image cloudinary
+# ajouter une image cloudinary (profil picture)
 - creer la route dans le user : requête : **server.post("/user/image", uploadImage)**   
 - creer la connexion a cloudinary : (provisoirement dans le **imageController.js**   
 const cloudinaryConfig = () => {     
