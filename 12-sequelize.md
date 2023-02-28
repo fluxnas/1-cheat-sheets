@@ -62,11 +62,11 @@ https://github.com/fluxnas/1-cheat-sheets/blob/9831c80debdd310c4423c3215c1ee34ef
 
 
 # ajouter une image cloudinary
-- creer la route dans le user : requête : **server.post("/user/image", uploadImage)**
-- creer la connexion a cloudinary : (provisoirement dans le **imageController.js**
-const cloudinaryConfig = () => {   
-  cloudinary.config({    // ==> basic cloudinary config (you will retrieve the infos in your cloudinary account)  
-  cloud_name: process.env.CLOUD_NAME,   
+- creer la route dans le user : requête : **server.post("/user/image", uploadImage)**   
+- creer la connexion a cloudinary : (provisoirement dans le **imageController.js**   
+const cloudinaryConfig = () => {     
+  cloudinary.config({    // ==> basic cloudinary config (you will retrieve the infos in your cloudinary account)   
+  cloud_name: process.env.CLOUD_NAME,    
   api_key: process.env.API_KEY,  
   api_secret: process.env.API_SECRET   
 });   
@@ -77,12 +77,12 @@ API_KEY=|||
 API_SECRET=|||**   
 -> et l'importer dans server.mjs (avec le controller) :    
 **import image from "./controllers/imageController.js";   
-const { uploadImage, cloudinaryConfig } = image;** 
--> et importer aussi dans server.mjs : **cloudinaryConfig();**   
-- installer dans terminal : **npm install express-fileupload**
--> importer dans server.mjs : **import fileUpload from "express-fileupload";**   
--> et :   
-**server.use(   
+const { uploadImage, cloudinaryConfig } = image;**   
+-> et importer aussi dans server.mjs : **cloudinaryConfig();**    
+- installer dans terminal : **npm install express-fileupload**  
+-> importer dans server.mjs : **import fileUpload from "express-fileupload";**     
+-> et :    
+**server.use(     
   fileUpload({   
     useTempFiles: true,   
     limits: { fileSize: 50 * 2024 * 1024 },   
