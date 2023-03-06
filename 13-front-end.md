@@ -19,4 +19,4 @@
 > @tailwind base;
 > @tailwind components;
 > @tailwind utilities;
-- dans tailwind.config.js dans le content : **["./src/**/*.{html,js, jsx}"]**
+- dans tailwind.config.js dans le content : **["./src/\**/*.{html,js, jsx}"]**
