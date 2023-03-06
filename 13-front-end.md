@@ -25,4 +25,9 @@
 - installer extension sur vs code (1 fois) : ES7+ React/Redux/React-Native snippets
 - dans dossier "page-accueil" creer fichier "page-accueil.jsx" et taper **rfc + enter** ca creer le debut de fichier
 - se ref ici pour les components : https://tailwindcomponents.com/cheatsheet/
-- 
+- creer un component dans fichier home.jsx : 
+https://github.com/fluxnas/1-cheat-sheets/blob/75cc1664d1d0349a809ce35eac67ca7ca3d82732/cheat-sheet-code/component.js#L1-L12
+- installer module : **npm install react-router-dom**
+- dans App.js importer les routes et les creer : **import { BrowserRouter as Router, Routes, Route } from "react-router-dom";** 
+https://github.com/fluxnas/1-cheat-sheets/blob/49d1fdbc628ebd724b9b93bbc730cc7d3abbb15c/cheat-sheet-code/routes.js#L2-L18
+
