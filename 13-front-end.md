@@ -21,7 +21,7 @@
 > @tailwind base;
 > @tailwind components;
 > @tailwind utilities;
-- dans tailwind.config.js dans le content : **["./src/\*\**/*.{html,js, jsx}"]**
+- dans tailwind.config.js dans le content : **["./src/\*\**/\*.{html,js, jsx}"]**
 - installer extension sur vs code (1 fois) : ES7+ React/Redux/React-Native snippets
 - dans dossier "page-accueil" creer fichier "page-accueil.jsx" et taper **rfc + enter** ca creer le debut de fichier
 - se ref ici pour les components : https://tailwindcomponents.com/cheatsheet/
