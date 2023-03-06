@@ -9,3 +9,14 @@
 > - git branch -M master
 > - git remote add origin https://github.com/fluxnas/fluxion3000.git
 > - git push -u origin master
+- creer fichier assets et mettre les images dedans
+- creer une branche : **git branch page-accueil** et se co : **git checkout page-accueil**
+- creer dossier : **page-accueil** dans dossier "components"
+- installer tailwind (gère le css) : **npm install -D tailwindcss** dans dossier "nom-projet"
+- init le tailwind : **npx tailwindcss init**
+- -suppr le fichier index.css et la route dans index.js "/index.css" devient "App.css"
+- tt suppr et coller ca dans le "App.css" : 
+> @tailwind base;
+> @tailwind components;
+> @tailwind utilities;
+- dans tailwind.config.js dans le content : **["./src/\**/*.{html,js, jsx}"]**
