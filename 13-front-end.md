@@ -31,3 +31,27 @@ https://github.com/fluxnas/1-cheat-sheets/blob/75cc1664d1d0349a809ce35eac67ca7ca
 - dans App.js importer les routes et les creer : **import { BrowserRouter as Router, Routes, Route } from "react-router-dom";** 
 https://github.com/fluxnas/1-cheat-sheets/blob/49d1fdbc628ebd724b9b93bbc730cc7d3abbb15c/cheat-sheet-code/routes.js#L2-L18
 
+
+
+# JSX
+
+## 5 regles :
+- noms des propriétés écrit en camelCase :
+> html : <input maxlength="5" />   
+> jsx : <input **maxLength**={5} />
+
+- nombres utilise les { } :
+> html : <input maxlength="5" />    
+> jsx : <input maxLength=**{5}** />   
+
+- le booleen true est ecrit simplement false avec des { }  :
+> html : <input speelcheck="true" /> & <input speelcheck="false" />
+> jsx : <input **speelCheck** /> & <input **speelCheck={false}** />
+
+- les class sont marqué className :
+> html : <div class="divider" />
+> jsx : <div **className**="divider" />
+
+- les styles sont des objets :
+> html : <a style="text-decoration:'none'; padding-top:'5px';" />
+> jsx : <div **style={{ textDecoration: 'none', paddingTop: '5px' }}**
