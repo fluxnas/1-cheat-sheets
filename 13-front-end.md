@@ -37,8 +37,8 @@ https://github.com/fluxnas/1-cheat-sheets/blob/49d1fdbc628ebd724b9b93bbc730cc7d3
 
 ## 5 regles :
 - noms des propriétés écrit en camelCase :
-html : <input maxlength="5" />    
-jsx : <input maxLength={5} />   
+html : \<input maxlength="5" />    
+jsx : \<input maxLength={5} />   
 
 - nombres utilise les { } :
 html : <input maxlength="5" />     
