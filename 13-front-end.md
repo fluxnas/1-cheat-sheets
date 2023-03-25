@@ -55,3 +55,16 @@ jsx : \<div **className**="divider" />
 - les styles sont des objets :    
 html : \<a style="text-decoration:'none'; padding-top:'5px';" />   
 jsx : \<div **style={{ textDecoration: 'none', paddingTop: '5px' }}**  
+
+# import
+
+quand on import un fichier .js pas besoin d'extension fichier   
+quand on import d'autres fichiers .css .json .png, .jpg ...
+
+# images import
+
+lorsqu'on importe une image si :
+images < 9.7kb --> <img src="data:image/png..." />
+images > 9.7kb --> <img src="/static/media/name.png />
+ 
+# events 
