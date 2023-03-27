@@ -68,3 +68,16 @@ images < 9.7kb --> <img src="data:image/png..." />
 images > 9.7kb --> <img src="/static/media/name.png />
  
 # events 
+detecte que le user clique sur un bouton   
+ 
+# state useState()
+fait apparaitre a l'ecran l'etat en reaction a l'event    
+useState -> defini une nouvelle piece de donnée qui va changer, donc a chaque fois que la données change on veut reactualiser le component   
+ 
+**const [count, setCount] = useState(0)**     
+- la valeur 0 est la valeur initiale par défault pour le morceau d'état ou morceau de donné   
+ - count : notre donnée qui va changer avec le temps (string tableau objet...)    
+ - setcount : cest la fonction "paramètres" utiliser pour update le count    
+ 
+ 
+ 
