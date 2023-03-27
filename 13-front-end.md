@@ -67,17 +67,24 @@ lorsqu'on importe une image si :
 images < 9.7kb --> <img src="data:image/png..." />
 images > 9.7kb --> <img src="/static/media/name.png />
  
-# events 
-detecte que le user clique sur un bouton   
+# events : detecte que le user clique sur un bouton   
+utiliser les events a chaque fois qu'un user interargit et quun element change (onClick onChange drag typing....)   
+ - determiner l'event : l'interaction que l'user va avoir   
+ https://legacy.reactjs.org/docs/events.html    
+ - créer une fonction (event handler ou callback) 
+ - la nommer : handle + action (handleClick, handleScroll...) 
+ - passer la fonction comme prop à un élément 
+ - bien verifier que la fonction passée en prop a un nom d'évent valide (onClick, onMouseOver...)
+ - bien appelé la propriété qui appel la fonction : **onClick**={handleClick}
  
-# state useState()
-fait apparaitre a l'ecran l'etat en reaction a l'event    
-useState -> defini une nouvelle piece de donnée qui va changer, donc a chaque fois que la données change on veut reactualiser le component   
+# state useState() : fait apparaitre a l'ecran l'etat en reaction a l'event    
+useState -> defini une nouvelle piece de donnée qui va changer, donc a chaque fois que la données change on veut reactualiser le component
+useState est utilisé à chaque fois que l'on veut réactualiser un élément sur la page
  
 **const [count, setCount] = useState(0)**     
 - la valeur 0 est la valeur initiale par défault pour le morceau d'état ou morceau de donné   
- - count : notre donnée qui va changer avec le temps (string tableau objet...)    
- - setcount : cest la fonction "paramètres" utiliser pour update le count    
+ - count (compte) : notre donnée qui va changer avec le temps (string tableau objet...)    
+ - setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count    
  
  
  
