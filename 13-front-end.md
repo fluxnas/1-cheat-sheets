@@ -84,7 +84,10 @@ useState est utilisé à chaque fois que l'on veut réactualiser un élément su
 **const [count, setCount] = useState(0)**     
 - 0 : la valeur initiale par défault pour le "morceau d'état"   
 - count (compte) : notre "morceau d'état" qui va changer avec le temps (string, tableau, objet...)    
-- setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count (le "morceau d'état")   
+- setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count (le "morceau d'état")    
+
+ ## .map function
  
+ souvent utiliser en react pour transformer chaques element dun tableau en une liste de components à l'utilisateur  
  
  
