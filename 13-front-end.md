@@ -82,9 +82,9 @@ useState -> defini une nouvelle piece de donnée qui va changer, donc a chaque f
 useState est utilisé à chaque fois que l'on veut réactualiser un élément sur la page
  
 **const [count, setCount] = useState(0)**     
-- la valeur 0 est la valeur initiale par défault pour le morceau d'état ou morceau de donné   
- - count (compte) : notre donnée qui va changer avec le temps (string tableau objet...)    
- - setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count    
+- 0 : la valeur initiale par défault pour le "morceau d'état"   
+- count (compte) : notre "morceau d'état" qui va changer avec le temps (string, tableau, objet...)    
+- setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count (le "morceau d'état")   
  
  
  
