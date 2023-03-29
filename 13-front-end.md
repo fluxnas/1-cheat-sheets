@@ -77,7 +77,8 @@ utiliser les events a chaque fois qu'un user interargit et quun element change (
  - bien verifier que la fonction passée en prop a un nom d'évent valide (onClick, onMouseOver...)
  - bien appelé la propriété qui appel la fonction : **onClick**={handleClick}
  
-# state useState() : fait apparaitre a l'ecran l'etat en reaction a l'event    
+# state useState() : 
+--> fait apparaitre a l'ecran les changements en reaction a l'event    
 useState -> defini une nouvelle piece de donnée qui va changer, donc a chaque fois que la données change on veut reactualiser le component
 useState est utilisé à chaque fois que l'on veut réactualiser un élément sur la page
  
