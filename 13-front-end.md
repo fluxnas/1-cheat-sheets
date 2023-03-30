@@ -87,12 +87,12 @@ useState est utilisé à chaque fois que l'on veut réactualiser un élément su
 - count (compte) : notre "morceau d'état" qui va changer avec le temps (string, tableau, objet...)    
 - setcount (décompte) : cest la fonction "paramètres" utiliser pour update le count (le "morceau d'état")    
 
- ## .map function
- 
- souvent utiliser en react pour transformer chaques element dun tableau en une liste de components à l'utilisateur  
+### .map function
+souvent utiliser en react pour transformer chaques element dun tableau en une liste de components à l'utilisateur  
  
                       
 # utiliser un API avec react
 
-## faire une requete http (librairie Axios ou fetch)
-terminal : **npom install axios**
+### faire une requete http (librairie Axios ou fetch)
+terminal : **npm install axios**
+                        
