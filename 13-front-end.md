@@ -91,4 +91,8 @@ useState est utilisé à chaque fois que l'on veut réactualiser un élément su
  
  souvent utiliser en react pour transformer chaques element dun tableau en une liste de components à l'utilisateur  
  
- 
+                      
+# utiliser un API avec react
+
+## faire une requete http (librairie Axios ou fetch)
+terminal : **npom install axios**
